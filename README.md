@@ -1,4 +1,6 @@
 # Elapse
+![Xcode](https://img.shields.io/badge/Xcode-8.3.3-brightgreen.svg)
+![Swift](https://img.shields.io/badge/Swift-3.1-brightgreen.svg)
 
 Elapse is tiny helper library for manipulating TimeInterval.
 
