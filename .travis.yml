@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode8.3
+xcode_project: Elapse.xcodeproj # path to your xcodeproj folder
+xcode_scheme: ElapseTests
+xcode_sdk: iphonesimulator
