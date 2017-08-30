@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92D0DD321F568B7D00E0DEE3 /* Elapse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Elapse.swift */; };
+		92D0DD3B1F568BA500E0DEE3 /* Elapse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Elapse.swift */; };
+		92D0DD441F568BBB00E0DEE3 /* Elapse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Elapse.swift */; };
 		OBJ_20 /* Elapse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Elapse.swift */; };
 		OBJ_27 /* ElapseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ElapseTests.swift */; };
 		OBJ_29 /* Elapse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Elapse.framework */; };
@@ -20,17 +23,62 @@
 			remoteGlobalIDString = OBJ_15;
 			remoteInfo = Elapse;
 		};
+		92D0DD4C1F56A31C00E0DEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92D0DD301F568B7D00E0DEE3;
+			remoteInfo = Elapse_iOS;
+		};
+		92D0DD4E1F56A31C00E0DEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92D0DD391F568BA500E0DEE3;
+			remoteInfo = Elapse_tvOS;
+		};
+		92D0DD501F56A31C00E0DEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92D0DD421F568BBB00E0DEE3;
+			remoteInfo = Elapse_watchOS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92D0DD371F568B7D00E0DEE3 /* Elapse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elapse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D0DD401F568BA500E0DEE3 /* Elapse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elapse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D0DD491F568BBB00E0DEE3 /* Elapse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elapse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_11 /* ElapseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapseTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Elapse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Elapse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_14 /* ElapseTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElapseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_14 /* ElapseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ElapseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_8 /* Elapse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elapse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		92D0DD331F568B7D00E0DEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D0DD3C1F568BA500E0DEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D0DD451F568BBB00E0DEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -63,6 +111,9 @@
 			children = (
 				OBJ_13 /* Elapse.framework */,
 				OBJ_14 /* ElapseTests.xctest */,
+				92D0DD371F568B7D00E0DEE3 /* Elapse.framework */,
+				92D0DD401F568BA500E0DEE3 /* Elapse.framework */,
+				92D0DD491F568BBB00E0DEE3 /* Elapse.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -96,9 +147,57 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_15 /* Elapse */ = {
+		92D0DD301F568B7D00E0DEE3 /* Elapse_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_16 /* Build configuration list for PBXNativeTarget "Elapse" */;
+			buildConfigurationList = 92D0DD341F568B7D00E0DEE3 /* Build configuration list for PBXNativeTarget "Elapse_iOS" */;
+			buildPhases = (
+				92D0DD311F568B7D00E0DEE3 /* Sources */,
+				92D0DD331F568B7D00E0DEE3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elapse_iOS;
+			productName = Elapse;
+			productReference = 92D0DD371F568B7D00E0DEE3 /* Elapse.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		92D0DD391F568BA500E0DEE3 /* Elapse_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D0DD3D1F568BA500E0DEE3 /* Build configuration list for PBXNativeTarget "Elapse_tvOS" */;
+			buildPhases = (
+				92D0DD3A1F568BA500E0DEE3 /* Sources */,
+				92D0DD3C1F568BA500E0DEE3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elapse_tvOS;
+			productName = Elapse;
+			productReference = 92D0DD401F568BA500E0DEE3 /* Elapse.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		92D0DD421F568BBB00E0DEE3 /* Elapse_watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D0DD461F568BBB00E0DEE3 /* Build configuration list for PBXNativeTarget "Elapse_watchOS" */;
+			buildPhases = (
+				92D0DD431F568BBB00E0DEE3 /* Sources */,
+				92D0DD451F568BBB00E0DEE3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elapse_watchOS;
+			productName = Elapse;
+			productReference = 92D0DD491F568BBB00E0DEE3 /* Elapse.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_15 /* Elapse_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_16 /* Build configuration list for PBXNativeTarget "Elapse_macOS" */;
 			buildPhases = (
 				OBJ_19 /* Sources */,
 				OBJ_21 /* Frameworks */,
@@ -107,7 +206,7 @@
 			);
 			dependencies = (
 			);
-			name = Elapse;
+			name = Elapse_macOS;
 			productName = Elapse;
 			productReference = OBJ_13 /* Elapse.framework */;
 			productType = "com.apple.product-type.framework";
@@ -122,6 +221,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				92D0DD4D1F56A31C00E0DEE3 /* PBXTargetDependency */,
+				92D0DD4F1F56A31C00E0DEE3 /* PBXTargetDependency */,
+				92D0DD511F56A31C00E0DEE3 /* PBXTargetDependency */,
 				OBJ_30 /* PBXTargetDependency */,
 			);
 			name = ElapseTests;
@@ -149,13 +251,40 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_15 /* Elapse */,
+				OBJ_15 /* Elapse_macOS */,
+				92D0DD301F568B7D00E0DEE3 /* Elapse_iOS */,
+				92D0DD391F568BA500E0DEE3 /* Elapse_tvOS */,
+				92D0DD421F568BBB00E0DEE3 /* Elapse_watchOS */,
 				OBJ_22 /* ElapseTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		92D0DD311F568B7D00E0DEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				92D0DD321F568B7D00E0DEE3 /* Elapse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D0DD3A1F568BA500E0DEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				92D0DD3B1F568BA500E0DEE3 /* Elapse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D0DD431F568BBB00E0DEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				92D0DD441F568BBB00E0DEE3 /* Elapse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -175,14 +304,167 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		92D0DD4D1F56A31C00E0DEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92D0DD301F568B7D00E0DEE3 /* Elapse_iOS */;
+			targetProxy = 92D0DD4C1F56A31C00E0DEE3 /* PBXContainerItemProxy */;
+		};
+		92D0DD4F1F56A31C00E0DEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92D0DD391F568BA500E0DEE3 /* Elapse_tvOS */;
+			targetProxy = 92D0DD4E1F56A31C00E0DEE3 /* PBXContainerItemProxy */;
+		};
+		92D0DD511F56A31C00E0DEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92D0DD421F568BBB00E0DEE3 /* Elapse_watchOS */;
+			targetProxy = 92D0DD501F56A31C00E0DEE3 /* PBXContainerItemProxy */;
+		};
 		OBJ_30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_15 /* Elapse */;
+			target = OBJ_15 /* Elapse_macOS */;
 			targetProxy = 92BE43B21ED746900076BAAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		92D0DD351F568B7D00E0DEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Elapse.xcodeproj/Elapse_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Elapse;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGET_NAME = Elapse;
+			};
+			name = Debug;
+		};
+		92D0DD361F568B7D00E0DEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Elapse.xcodeproj/Elapse_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Elapse;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGET_NAME = Elapse;
+			};
+			name = Release;
+		};
+		92D0DD3E1F568BA500E0DEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Elapse.xcodeproj/Elapse_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Elapse;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				TARGET_NAME = Elapse;
+			};
+			name = Debug;
+		};
+		92D0DD3F1F568BA500E0DEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Elapse.xcodeproj/Elapse_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Elapse;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				TARGET_NAME = Elapse;
+			};
+			name = Release;
+		};
+		92D0DD471F568BBB00E0DEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Elapse.xcodeproj/Elapse_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Elapse;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGET_NAME = Elapse;
+			};
+			name = Debug;
+		};
+		92D0DD481F568BBB00E0DEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Elapse.xcodeproj/Elapse_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Elapse;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGET_NAME = Elapse;
+			};
+			name = Release;
+		};
 		OBJ_17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -200,6 +482,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				TARGET_NAME = Elapse;
 			};
 			name = Debug;
@@ -221,6 +504,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				TARGET_NAME = Elapse;
 			};
 			name = Release;
@@ -235,10 +519,13 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Elapse.xcodeproj/ElapseTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				TARGET_NAME = ElapseTests;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
 			name = Debug;
 		};
@@ -252,10 +539,13 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Elapse.xcodeproj/ElapseTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				TARGET_NAME = ElapseTests;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
 			name = Release;
 		};
@@ -306,7 +596,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_16 /* Build configuration list for PBXNativeTarget "Elapse" */ = {
+		92D0DD341F568B7D00E0DEE3 /* Build configuration list for PBXNativeTarget "Elapse_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D0DD351F568B7D00E0DEE3 /* Debug */,
+				92D0DD361F568B7D00E0DEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		92D0DD3D1F568BA500E0DEE3 /* Build configuration list for PBXNativeTarget "Elapse_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D0DD3E1F568BA500E0DEE3 /* Debug */,
+				92D0DD3F1F568BA500E0DEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		92D0DD461F568BBB00E0DEE3 /* Build configuration list for PBXNativeTarget "Elapse_watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D0DD471F568BBB00E0DEE3 /* Debug */,
+				92D0DD481F568BBB00E0DEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_16 /* Build configuration list for PBXNativeTarget "Elapse_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_17 /* Debug */,
