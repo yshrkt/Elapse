@@ -1,10 +1,24 @@
-// swift-tools-version:3.1
+// swift-tools-version:4.2
 
 import PackageDescription
 
 let package = Package(
     name: "Elapse",
-    targets: [],
+    products: [
+        .library(name: "Elapse", type: .dynamic, targets: ["Elapse"])
+    ],
     dependencies: [],
-    exclude: []
+    targets: [
+        .target(
+            name: "Elapse",
+            dependencies: [],
+            path: "Sources"
+        ),
+        .testTarget(
+            name: "ElapseTests",
+            dependencies: ["Elapse"],
+            path: "Tests"
+        )
+    ],
+    swiftLanguageVersions: [.v4, .v4_2]
 )

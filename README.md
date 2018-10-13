@@ -1,6 +1,6 @@
 # Elapse
-![Xcode](https://img.shields.io/badge/Xcode-8.3.3-brightgreen.svg)
-![Swift](https://img.shields.io/badge/Swift-3.1-brightgreen.svg)
+![Xcode](https://img.shields.io/badge/Xcode-10-brightgreen.svg)
+![Swift](https://img.shields.io/badge/Swift-4.2-brightgreen.svg)
 ![platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-333333.svg)
 ![Travis CI](https://travis-ci.org/yshrkt/Elapse.svg?branch=master)
 
@@ -48,8 +48,8 @@ print("\(output6.hours)hour") // "1hour"
 
 ## Requirements
 
-* Xcode 8.3.2
-* Swift 3.1
+* Xcode 10
+* Swift 4.2
 
 ## Installation
 

@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.3
+osx_image: xcode10
 xcode_project: Elapse.xcodeproj # path to your xcodeproj folder
 xcode_scheme: ElapseTests
 xcode_sdk: iphonesimulator
@@ -7,6 +7,6 @@ xcode_sdk: iphonesimulator
 script:
    - pod lib lint --allow-warnings
    - xcodebuild clean test -scheme Elapse_macOS -configuration Debug -destination 'platform=OS X'
-   - xcodebuild clean test -scheme Elapse_iOS -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3.1'
+   - xcodebuild clean test -scheme Elapse_iOS -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 8,OS=12'
    - xcodebuild clean test -scheme Elapse_tvOS -configuration Debug -destination 'platform=tvOS Simulator,name=Apple TV 1080p'
 #   - xcodebuild clean test -scheme Elapse_watchOS -configuration Debug -destination 'platform=watchOS Simulator,name=Apple Watch Series 2 - 38mm,OS=3.2'
