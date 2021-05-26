@@ -5,7 +5,8 @@ import PackageDescription
 let package = Package(
     name: "Elapse",
     products: [
-        .library(name: "Elapse", type: .dynamic, targets: ["Elapse"])
+        .library(name: "Elapse-Auto", targets: ["Elapse"]),
+        .library(name: "Elapse", type: .dynamic, targets: ["Elapse"]),
     ],
     dependencies: [],
     targets: [
